@@ -133,7 +133,12 @@ TidyData <- preTidyData %>%
 
 This two step procedure lead to `Tidydata` having 180 obs. and 88 variables
 
+## Checking structure of the data
 ```{r}
 names(TidyData)
 ```
 
+## Writing text file
+```{r}
+write.table(TidyData, "./data/TidyData.txt", row.name=FALSE)
+```
