@@ -140,5 +140,5 @@ names(TidyData)
 
 ## Writing text file
 ```{r}
-write.table(TidyData, "./data/TidyData.txt", row.name=FALSE)
+write.table(TidyData, "TidyData.txt", row.name=FALSE)
 ```
