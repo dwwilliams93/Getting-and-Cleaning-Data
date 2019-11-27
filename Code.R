@@ -8,7 +8,6 @@ url <-
 download.file(url, destfile = "./data/UIC.zip", method = "curl")
 UICfolder <- unzip("./data/UIC.zip")
 
-
 #figuring out what files to read using regular expression
 trainingRows <- grep("(.)*train(.)*", UICfolder, ignore.case = TRUE)
 testRows <- grep("(.)*test(.)*", UICfolder, ignore.case = TRUE)
